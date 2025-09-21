@@ -1,0 +1,25 @@
+# IDE and system files
+.metadata/
+.idea/
+.vscode/
+*.iml
+
+# Build directories
+target/
+build/
+out/
+
+# Log and temp files
+*.log
+*.tmp
+tmp/
+
+# Compiled files
+*.class
+*.jar
+*.war
+*.ear
+
+# OS files
+.DS_Store
+Thumbs.db
