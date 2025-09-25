@@ -4,13 +4,9 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
                            http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <!-- Manager Bean -->
-    <bean id="mng" class="com.nit.Manager" />
+<bean id="soc" class="com.nit.Socialmedia">
+<constructor-arg value ="satyam21"></constructor-arg>
+<constructor-arg value ="25"></constructor-arg>
 
-    <!-- Employee Bean with Setter Injection -->
-    <bean id="emp" class="com.nit.Employee">
-        <property name="age" value="15"/>
-        <property name="manager" ref="mng" />
-    </bean>
-
+</bean>
 </beans>
