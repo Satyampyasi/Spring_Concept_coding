@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
                            http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <!-- Manager Bean -->
-    <bean id="mng" class="com.nit.Manager" />
 
-    <!-- Employee Bean with Setter Injection -->
-    <bean id="emp" class="com.nit.Employee">
-        <property name="age" value="15"/>
-        <property name="manager" ref="mng" />
-    </bean>
+	<bean class="com.nit.Employee">
+		<property name="manager">
+			<bean class="com.nit.Manager"></bean>
+		</property>
+		<property name="age" value="25" />
+	</bean>
+
+
 
 </beans>
